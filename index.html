@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campaña de Avivamiento - Iglesia</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Audio Background -->
+    <audio id="backgroundMusic" loop>
+        <source src="/assets/Barak_Acepta.mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+
+    <!-- Audio Control Button -->
+    <button id="audioToggle" class="audio-toggle">
+        <svg class="play-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="5,3 19,12 5,21"></polygon>
+        </svg>
+        <svg class="pause-icon hidden" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="6" y="4" width="4" height="16"></rect>
+            <rect x="14" y="4" width="4" height="16"></rect>
+        </svg>
+    </button>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <!-- Hero Background Carousel -->
+        <div class="swiper hero-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="hero-slide" style="background-image: url('/assets/background3.jpg');">
+                        <div class="hero-overlay"></div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="hero-slide" style="background-image: url('/assets/background2.jpg');">
+                        <div class="hero-overlay"></div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="hero-slide" style="background-image: url('/assets/background1.jpg');">
+                        <div class="hero-overlay"></div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="hero-slide" style="background-image: url('/assets/background4.jpg');">
+                        <div class="hero-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero-background">
+            <div class="floating-elements">
+                <div class="floating-cross"></div>
+                <div class="floating-dove"></div>
+                <div class="floating-light"></div>
+            </div>
+        </div>
+        
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="title-line animate-fade-in-up">Campaña de</span>
+                <span class="title-line animate-fade-in-up delay-1">AVIVAMIENTO</span>
+                <span class="title-line animate-fade-in-up delay-2">2025</span>
+            </h1>
+            <p class="hero-subtitle animate-fade-in-up delay-3">
+                "Porque donde están dos o tres congregados en mi nombre, allí estoy yo en medio de ellos"
+            </p>
+            <div class="hero-verse animate-fade-in-up delay-4">Mateo 18:20</div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Campaign Carousel -->
+    <section class="campaign-section">
+        <div class="container">
+            <h2 class="section-title">Únete a esta Gran Celebración</h2>
+            <div class="swiper campaign-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="campaign-card">
+                            <div class="card-icon">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.29 1.51 4.04 3 5.5Z"/>
+                                    <path d="M12 5L8 21l4-7 4 7-4-16"/>
+                                </svg>
+                            </div>
+                            <h3>Adoración y Alabanza</h3>
+                            <p>Experimenta la presencia de Dios a través de momentos únicos de adoración con música en vivo y coros celestiales.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="campaign-card">
+                            <div class="card-icon">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+                                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+                                </svg>
+                            </div>
+                            <h3>Palabra Poderosa</h3>
+                            <p>Recibe mensajes transformadores que cambiarán tu vida y fortalecerán tu fe en Cristo Jesús.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="campaign-card">
+                            <div class="card-icon">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                    <circle cx="9" cy="7" r="4"/>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                                </svg>
+                            </div>
+                            <h3>Comunión Fraternal</h3>
+                            <p>Conecta con hermanos en la fe y forma parte de una comunidad que te ama y apoya.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="campaign-card">
+                            <div class="card-icon">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                                </svg>
+                            </div>
+                            <h3>Milagros y Sanidad</h3>
+                            <p>Sé testigo del poder sobrenatural de Dios manifestándose en sanidades y milagros.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Meetings Section -->
+    <section class="meetings-section">
+        <div class="container">
+            <h2 class="section-title">Nuestras Reuniones</h2>
+            <p class="section-subtitle">Descubre los diferentes momentos de encuentro con Dios que tenemos para ti</p>
+            
+            <div class="swiper meetings-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="meeting-card">
+                            <div class="meeting-image">
+                                <img src="/assets/demo.jpg" alt="Culto Dominical">
+                                <div class="meeting-overlay">
+                                    <div class="meeting-time">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <circle cx="12" cy="12" r="10"/>
+                                            <polyline points="12,6 12,12 16,14"/>
+                                        </svg>
+                                        <span>10:00 AM</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="meeting-content">
+                                <h3>Culto Dominical</h3>
+                                <p class="meeting-day">Domingos</p>
+                                <p class="meeting-description">Únete a nuestra celebración principal con adoración, palabra y comunión fraternal.</p>
+                                <div class="meeting-features">
+                                    <span class="feature-tag">Adoración</span>
+                                    <span class="feature-tag">Predicación</span>
+                                    <span class="feature-tag">Comunión</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide">
+                        <div class="meeting-card">
+                            <div class="meeting-image">
+                                <img src="/assets/demo.jpg" alt="Estudio Bíblico">
+                                <div class="meeting-overlay">
+                                    <div class="meeting-time">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <circle cx="12" cy="12" r="10"/>
+                                            <polyline points="12,6 12,12 16,14"/>
+                                        </svg>
+                                        <span>7:00 PM</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="meeting-content">
+                                <h3>Estudio Bíblico</h3>
+                                <p class="meeting-day">Miércoles</p>
+                                <p class="meeting-description">Profundiza en la Palabra de Dios con estudios detallados y aplicación práctica.</p>
+                                <div class="meeting-features">
+                                    <span class="feature-tag">Enseñanza</span>
+                                    <span class="feature-tag">Discusión</span>
+                                    <span class="feature-tag">Crecimiento</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide">
+                        <div class="meeting-card">
+                            <div class="meeting-image">
+                                <img src="/assets/demo.jpg" alt="Reunión de Jóvenes">
+                                <div class="meeting-overlay">
+                                    <div class="meeting-time">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <circle cx="12" cy="12" r="10"/>
+                                            <polyline points="12,6 12,12 16,14"/>
+                                        </svg>
+                                        <span>6:30 PM</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="meeting-content">
+                                <h3>Reunión de Jóvenes</h3>
+                                <p class="meeting-day">Viernes</p>
+                                <p class="meeting-description">Espacio dinámico para jóvenes con música contemporánea y mensajes relevantes.</p>
+                                <div class="meeting-features">
+                                    <span class="feature-tag">Dinámico</span>
+                                    <span class="feature-tag">Música</span>
+                                    <span class="feature-tag">Amistad</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide">
+                        <div class="meeting-card">
+                            <div class="meeting-image">
+                                <img src="/assets/demo.jpg" alt="Reunión de Oración">
+                                <div class="meeting-overlay">
+                                    <div class="meeting-time">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <circle cx="12" cy="12" r="10"/>
+                                            <polyline points="12,6 12,12 16,14"/>
+                                        </svg>
+                                        <span>6:00 AM</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="meeting-content">
+                                <h3>Reunión de Oración</h3>
+                                <p class="meeting-day">Martes y Jueves</p>
+                                <p class="meeting-description">Momentos de intercesión y búsqueda de la presencia de Dios en oración.</p>
+                                <div class="meeting-features">
+                                    <span class="feature-tag">Intercesión</span>
+                                    <span class="feature-tag">Presencia</span>
+                                    <span class="feature-tag">Poder</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide">
+                        <div class="meeting-card">
+                            <div class="meeting-image">
+                                <img src="/assets/demo.jpg" alt="Células de Hogar">
+                                <div class="meeting-overlay">
+                                    <div class="meeting-time">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <circle cx="12" cy="12" r="10"/>
+                                            <polyline points="12,6 12,12 16,14"/>
+                                        </svg>
+                                        <span>7:30 PM</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="meeting-content">
+                                <h3>Células de Hogar</h3>
+                                <p class="meeting-day">Sábados</p>
+                                <p class="meeting-description">Reuniones íntimas en hogares para fortalecer lazos y crecer en comunidad.</p>
+                                <div class="meeting-features">
+                                    <span class="feature-tag">Intimidad</span>
+                                    <span class="feature-tag">Hogar</span>
+                                    <span class="feature-tag">Familia</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Navigation buttons -->
+                <div class="swiper-button-next meetings-next">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="9,18 15,12 9,6"/>
+                    </svg>
+                </div>
+                <div class="swiper-button-prev meetings-prev">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="15,18 9,12 15,6"/>
+                    </svg>
+                </div>
+                
+                <!-- Pagination -->
+                <div class="swiper-pagination meetings-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section class="community-section">
+        <div class="container">
+            <h2 class="section-title">Nuestra Comunidad</h2>
+            <p class="section-subtitle">Conoce a las personas que forman parte de esta gran familia en Cristo</p>
+        
+            <div class="swiper community-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="community-card">
+                            <div class="community-image">
+                                <img src="/assets/demo.jpg" alt="Familia en adoración">
+                                <div class="community-overlay">
+                                    <h4>Familias Unidas</h4>
+                                    <p>Creciendo juntos en fe</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide">
+                        <div class="community-card">
+                            <div class="community-image">
+                                <img src="/assets/demo.jpg" alt="Jóvenes en oración">
+                                <div class="community-overlay">
+                                    <h4>Jóvenes Apasionados</h4>
+                                    <p>Nueva generación de fe</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide">
+                        <div class="community-card">
+                            <div class="community-image">
+                                <img src="/assets/demo.jpg" alt="Niños en actividades">
+                                <div class="community-overlay">
+                                    <h4>Pequeños Discípulos</h4>
+                                    <p>El futuro de la iglesia</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide">
+                        <div class="community-card">
+                            <div class="community-image">
+                                <img src="/assets/demo.jpg" alt="Líderes sirviendo">
+                                <div class="community-overlay">
+                                    <h4>Líderes Siervos</h4>
+                                    <p>Corazones que sirven</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide">
+                        <div class="community-card">
+                            <div class="community-image">
+                                <img src="/assets/demo.jpg" alt="Ministerio de música">
+                                <div class="community-overlay">
+                                    <h4>Ministerio Musical</h4>
+                                    <p>Adoración con excelencia</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide">
+                        <div class="community-card">
+                            <div class="community-image">
+                                <img src="/assets/demo.jpg" alt="Voluntarios sirviendo">
+                                <div class="community-overlay">
+                                    <h4>Corazones Voluntarios</h4>
+                                    <p>Sirviendo con amor</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Pagination -->
+                <div class="swiper-pagination community-pagination"></div>
+            </div>
+            
+            <div class="community-stats">
+                <div class="stat-item">
+                    <div class="stat-number">100+</div>
+                    <div class="stat-label">Miembros Activos</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">5</div>
+                    <div class="stat-label">Años de Ministerio</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">100+</div>
+                    <div class="stat-label">Vidas Transformadas</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Details -->
+    <section class="event-details">
+        <div class="container">
+            <div class="details-grid">
+                <div class="detail-card animate-on-scroll">
+                    <div class="detail-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                            <line x1="16" y1="2" x2="16" y2="6"/>
+                            <line x1="8" y1="2" x2="8" y2="6"/>
+                            <line x1="3" y1="10" x2="21" y2="10"/>
+                        </svg>
+                    </div>
+                    <h3>Fechas</h3>
+                    <p>15 - 18 de Febrero</p>
+                    <span>Viernes a Lunes</span>
+                </div>
+                <div class="detail-card animate-on-scroll">
+                    <div class="detail-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12,6 12,12 16,14"/>
+                        </svg>
+                    </div>
+                    <h3>Horario</h3>
+                    <p>7:00 PM - 10:00 PM</p>
+                    <span>Todos los días</span>
+                </div>
+                <div class="detail-card animate-on-scroll">
+                    <div class="detail-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                    </div>
+                    <h3>Ubicación</h3>
+                    <p>Iglesia Central</p>
+                    <span>Av. Principal #123</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Form -->
+    <section class="registration-section">
+        <div class="container">
+            <div class="registration-content">
+                <div class="registration-info">
+                    <h2>Confirma tu Asistencia</h2>
+                    <p>No te pierdas esta oportunidad única de experimentar el poder transformador de Dios. Regístrate ahora y sé parte de este mover sobrenatural.</p>
+                    <div class="benefits-list">
+                        <div class="benefit-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20,6 9,17 4,12"/>
+                            </svg>
+                            <span>Entrada completamente gratuita</span>
+                        </div>
+                        <div class="benefit-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20,6 9,17 4,12"/>
+                            </svg>
+                            <span>Material de estudio incluido</span>
+                        </div>
+                        <div class="benefit-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20,6 9,17 4,12"/>
+                            </svg>
+                            <span>Oración personalizada</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="registration-form" id="registrationForm">
+                    <div class="form-group">
+                        <label for="fullName">Nombre Completo</label>
+                        <input type="text" id="fullName" name="fullName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Teléfono</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="attendanceDays">Días que planeas asistir</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="days" value="viernes">
+                                <span class="checkmark"></span>
+                                Viernes 15
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="days" value="sabado">
+                                <span class="checkmark"></span>
+                                Sábado 16
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="days" value="domingo">
+                                <span class="checkmark"></span>
+                                Domingo 17
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="days" value="lunes">
+                                <span class="checkmark"></span>
+                                Lunes 18
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="prayerRequest">Petición de Oración (Opcional)</label>
+                        <textarea id="prayerRequest" name="prayerRequest" rows="3" placeholder="Comparte tu petición de oración..."></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <span>Confirmar Asistencia</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Iglesia Central</h3>
+                    <p>Transformando vidas a través del amor de Cristo</p>
+                </div>
+                <div class="footer-contact">
+                    <p>📞 (555) 123-4567</p>
+                    <p>📧 info@iglesiacentral.org</p>
+                    <p>📍 Av. Principal #123, Ciudad</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Iglesia Central. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-icon">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20,6 9,17 4,12"/>
+                </svg>
+            </div>
+            <h3>¡Registro Exitoso!</h3>
+            <p>Gracias por confirmar tu asistencia. Te esperamos con los brazos abiertos para vivir juntos este tiempo de bendición.</p>
+            <button onclick="closeModal()" class="modal-btn">Cerrar</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
