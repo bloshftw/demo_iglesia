@@ -1174,3 +1174,8 @@ body {
     padding: 20px 15px;
   }
 }
+
+.swiper-button-next,
+.swiper-button-prev {
+  display: none !important;
+}
